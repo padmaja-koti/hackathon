@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimez</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Cairo';
+            font-size: 15px;
+        }
+        
+        .background {
+            background-image: url('Group 5841.png');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: #1a1a1a18;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        
+        .navbar .login {
+            background: #0056e03e;
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+        
+        .navbar nav {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, blue, purple);
+            height: 700px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        
+        .vertical-text {
+            width: 100px;
+            /* Set the desired width */
+            height: 300px;
+            /* Set the desired height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .vertical-text p {
+            writing-mode: vertical-rl;
+            /* Vertical text from right to left */
+            transform: rotate(180deg);
+            /* Rotate to read from top to bottom */
+            margin: 0;
+            /* Remove default margin */
+            font-size: medium;
+            opacity: 50%;
+        }
+        
+        img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#">Home</a>
+
+            </div>
+            <div class="dropdown">
+                <a href="#">Who we are &#x25BC;</a>
+
+            </div>
+            <div class="dropdown">
+                <a href="#">Solutions &#x25BC;</a>
+
+            </div>
+            <div class="dropdown">
+                <a href="#">Portfolio &#x25BC;</a>
+
+            </div>
+            <div class="dropdown">
+                <a href="#">Case Studies </a>
+
+            </div>
+            <div class="dropdown">
+                <a href="#">Careers &#x25BC;</a>
+
+            </div>
+            <div class="dropdown">
+                <a href="#">Contact Us &#x25BC;</a>
+
+            </div>
+            <a href="#" class="login">Login →</a>
+
+        </nav>
+    </div>
+
+    <header>
+        <div>
+            <div class="row">
+                <div class="col-md-2 vertical-text">
+                    <p>Facebook Twitter Instagram</p>
+                </div>
+                <div class="col-md-4">
+                    <h1 style="font-weight: bold;">Building The Digital Universe</h1>
+                    <h4>With every client we serve, we bring forth a deep passion for creative problem-solving and digital innovations- that's what we deliver. We’ve Great minds at work for the best technologies to make digital easy and impactful.</h4>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="Default.png">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="features">
+        <div class="container">
+            <div clas="row">
+                <div class="col-md-6">
+                    <h2>We carft digital strategies that turn your brand into a digital sensation</h2>
+                    <p> we are passinonate about helping businesses thrive in the digital landscape.Our team of experts is dedicated to providing cutting-edge digital marketing tailored to your unique needs.</p>
+                </div>
+                <div class="col-md-6 feature-item">
+                    <h3>Define Clear Goals and Objectives</h3>
+                    <p>Our strategy begins with a crystal-clear roadmap.We work closely with you to define specific,measurable ,& achievable goals.</p>
+                </div>
+                <div class="col-md-6 feature-item">
+                    <h3>Target Audience</h3>
+                    <p>We dive deep to understand your audience,forging connections that tarnsform visitors into loyal customers.</p>
+                </div>
+                <div class="col-md-6 feature-item">
+                    <h3> Right Digital Channels</h3>
+                    <p> We're like online detectives discovering where your customers are,and the we craft posts and ads that perfectly fit.</p>
+                </div>
+                <div class="col-md-6 feature-item">
+                    <h3> Analytics and Reporting</h3>
+                    <p> We use analytics for precise campaign monitoring,tracking website traffic,engagement,and convetsions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>TELL US EVERY-THING</h2>
+            <p> Our Business Philosophy :We strive to unlock collective wisdom and go beyond whats possible to grow together.</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group co">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="text" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPhone">Phone</label>
+                        <input type="text" class="form-control" id="inputPhone">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputCountry">Country</label>
+                        <input type="text" class="form-control" id="inputCountry">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <lable for="inputCity">City</lable>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCompany">Company</label>
+                        <input type="text" class="form-control" id="inputCompany">
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <lable for="inputMessage">Message</lable>
+                    <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                </div>
+                <button type="Submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        </div>
+    </section>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+        }
+        
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .nav li {
+            margin: 0 15px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .section h2 {
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+    </head>
+
+    <footer class="footer">
+        <div class="column">
+            <h3>ULTIMEZ</h3>
+            <p>Lets Build The Future Together</p>
+            <p>Ultimez Technology, Industry Specific Software, Designing and Branding Solutions, Globally</p>
+        </div>
+        <div class="vertical-line"></div>
+        <!-- Add this line for the vertical line -->
+        <div class="column">
+            <ul>
+                <li><strong>Services</strong></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Website Designing</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">App Development</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Hire Resources</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Client Terminal</a></li>
+                <li><a href="#">Employee Login</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <p>In Association with<br><strong>ULTIMEZ LAB</strong></p>
+
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2013-2023 Ultimez Technology. All Rights Reserved. Privacy Policy.</p>
+            <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Sitemap</a>
+        </div>
+    </footer>
+    .footer { background-color: #003399; /* Adjust the color as needed */ color: #ffffff; padding: 20px 0; display: flex; flex-wrap: wrap; justify-content: space-around; } .footer .column { flex: 1; min-width: 200px; padding: 10px; position: relative; } .footer
+    .vertical-line { width: 2px; background-color: #ffffff; /* Adjust the color as needed */ margin: 0 20px; height: auto; align-self: stretch; /* This makes the line span the height of the columns */ } .footer h3 { margin-top: 0; } .footer ul { list-style:
+    none; padding: 0; } .footer li { margin-bottom: 10px; } .footer a { color: #ffffff; text-decoration: none; } .footer a:hover { text-decoration: underline; } .footer .bottom-bar { text-align: center; padding-bottom: 20px; border-top: 1px solid #ffffff;
+    margin-bottom: 20px; width: 45%; }
